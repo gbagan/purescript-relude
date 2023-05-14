@@ -145,6 +145,7 @@ import Data.Array
   , mapWithIndex
   , concat
   , scanl
+  , sortBy
   , sortWith
   , tail
   , zip
