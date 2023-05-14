@@ -167,7 +167,7 @@ import Data.Lens.Record (prop) as Exports
 import Data.List (List(..)) as Exports
 import Data.Map (Map) as Exports
 import Data.Maybe (Maybe(..), maybe, fromMaybe, isJust, isNothing) as Exports
-import Data.Number (cos, floor, sin, pi, tan, sqrt) as Exports
+import Data.Number (cos, sin, pi, tan, sqrt) as Exports
 import Data.Ord (abs) as Exports
 import Data.Set (Set) as Exports
 import Data.Traversable (for, sequence, traverse) as Exports
