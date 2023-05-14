@@ -156,7 +156,7 @@ import Data.Array
   ) as Exports
 import Data.Array.NonEmpty (NonEmptyArray) as Exports
 import Data.Either (Either(..)) as Exports
-import Data.Foldable (class Foldable, and, or, for_, sum, traverse_, maximumBy, minimumBy) as Exports
+import Data.Foldable (class Foldable, and, or, for_, sum, traverse_, maximum, maximumBy, minimum, minimumBy) as Exports
 import Data.Int (toNumber, floor, even) as Exports
 import Data.Lazy (Lazy, force, defer) as Exports
 import Data.Lens (Lens', Iso', lens, set, iso, view, over, (^.), (^?), (.~), (%~), (?~), (+~), (.=), (%=), (+=)) as Exports
