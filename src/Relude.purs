@@ -108,9 +108,12 @@ import Prelude
   , (>>>)
   , (||)
   ) as Exports
+import Control.Alt ((<|>)) as Exports
+import Control.Alternative (guard) as Exports
 import Control.Monad.Reader.Class (ask) as Exports
 import Control.Monad.Reader.Trans (ReaderT) as Exports
-import Control.Monad.State (get, modify_, put) as Exports
+import Control.Monad.State (get, gets, modify, modify_, put) as Exports
+import Control.Monad.State.Class (class MonadState) as Exports
 import Control.Monad.Trans.Class (lift) as Exports
 import Control.Monad.Gen.Trans (Gen) as Exports
 import Data.Array
@@ -151,6 +154,7 @@ import Data.Array
   , zip
   , zipWith
   ) as Exports
+import Data.Array.NonEmpty (NonEmptyArray) as Exports
 import Data.Either (Either(..)) as Exports
 import Data.Foldable (class Foldable, and, or, for_, sum, traverse_, maximumBy, minimumBy) as Exports
 import Data.Int (toNumber, floor, even) as Exports
@@ -163,17 +167,13 @@ import Data.Lens.Record (prop) as Exports
 import Data.List (List(..)) as Exports
 import Data.Map (Map) as Exports
 import Data.Maybe (Maybe(..), maybe, fromMaybe, isJust, isNothing) as Exports
-import Data.Number (cos, sin, pi, tan, sqrt) as Exports
+import Data.Number (cos, floor, sin, pi, tan, sqrt) as Exports
 import Data.Ord (abs) as Exports
 import Data.Set (Set) as Exports
 import Data.Traversable (for, sequence, traverse) as Exports
 import Data.Tuple (Tuple(..), curry, fst, snd, uncurry) as Exports
 import Data.Tuple.Nested ((/\)) as Exports
-import Data.Array.NonEmpty (NonEmptyArray) as Exports
 import Data.Unfoldable (replicateA) as Exports
-import Control.Alt ((<|>)) as Exports
-import Control.Alternative (guard) as Exports
-import Control.Monad.State.Class (class MonadState) as Exports
 import Effect (Effect) as Exports
 import Effect.Class (class MonadEffect, liftEffect) as Exports
 import Effect.Aff (Aff) as Exports
