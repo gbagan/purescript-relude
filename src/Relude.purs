@@ -180,6 +180,7 @@ import Effect.Aff (Aff) as Exports
 import Effect.Aff.Class (class MonadAff, liftAff) as Exports
 import Type.Proxy (Proxy(..)) as Exports
 
+import Prelude (flip)
 import Data.Array as Array
 
 range ∷ Int → Int → Array Int
