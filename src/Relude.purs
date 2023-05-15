@@ -1,4 +1,4 @@
-module Relude (module Exports) where
+module Relude (module Exports, (..), (?:), flipFromMaybe, range) where
 
 import Prelude
   ( class Applicative
@@ -179,3 +179,15 @@ import Effect.Class (class MonadEffect, liftEffect) as Exports
 import Effect.Aff (Aff) as Exports
 import Effect.Aff.Class (class MonadAff, liftAff) as Exports
 import Type.Proxy (Proxy(..)) as Exports
+
+import Data.Array as Array
+
+range ∷ Int → Int → Array Int
+range n m = if n > m then [] else Array.range n m
+
+infix 8 range as ..
+
+flipFromMaybe ∷ ∀ a. Exports.Maybe a → a → a
+flipFromMaybe = flip Exports.fromMaybe
+
+infix 0 flipFromMaybe as ?:
