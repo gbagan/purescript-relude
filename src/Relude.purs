@@ -129,6 +129,7 @@ import Data.Array
   , foldl
   , foldr
   , take
+  , drop
   , null
   , length
   , mapMaybe
@@ -141,6 +142,7 @@ import Data.Array
   , replicate
   , reverse
   , modifyAt
+  , modifyAtIndices
   , insertAt
   , updateAt
   , updateAtIndices
